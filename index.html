@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class='bx bx-chevron-left'></i>
+            </div>
+            <div class="circle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+        <img src="media/pexels-nickmans-gabriel-12317767 - Copy.jpg" alt="" class="song-img" id="song-img">
+        <h1 id="song-title">success-swoop</h1>
+
+        <audio id="song">
+            <source id="audio-source" src="media/success-swoop-main-version-18178-01-40.mp3">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div onclick="prevSong()"> <i class='bx bx-left-arrow-alt'></i></div>
+            <div onclick="playpause()"> <i class='bx bx-play' id="ctricon"></i></div>
+            <div onclick="nextSong()"> <i class='bx bx-right-arrow-alt'></i></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+<source src="">
